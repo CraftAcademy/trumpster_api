@@ -1,5 +1,4 @@
 require_relative "boot"
-
 require "rails"
 require "active_model/railtie"
 require "active_job/railtie"
@@ -19,6 +18,17 @@ module TrumpsterApi
     config.load_defaults 6.0
     config.api_only = true
 
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins "*"
+        resource "*",
+          headers: :any,
+          methods: %i[get post put delete],
+          expose: %w(access-token expiry token-type uid client),
+          max_age: 0
+      end
+    end
+
     config.generators do |generate|
       generate.test_framework :rspec
       generate.helper false
@@ -30,15 +40,7 @@ module TrumpsterApi
       generate.request_specs false
     end
 
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins "*"
-        resource "*",
-          headers: :any,
-          methods: %i[get post put delete],
-          expose: %w(access-token expiry token-type uid client),
-          max_age: 0
-      end
-    end
+    config.stripe.publishable_key = Rails.application.credentials.stripe[:publishable_key]
+    config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
   end
 end

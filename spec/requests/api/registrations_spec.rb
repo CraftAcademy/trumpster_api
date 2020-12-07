@@ -6,12 +6,12 @@ RSpec.describe "GET /api/auth", type: :request do
   describe "with valid credentials" do
     before do
       post "/api/auth",
-          params: {
-            email: "test@test.com",
-            password: "12345678",
-            password_confirmation: "12345678",
-          },
-          headers: headers
+        params: {
+          email: "test@test.com",
+          password: "12345678",
+          password_confirmation: "12345678",
+        },
+        headers: headers
     end
 
     it "is expected to return a 200 response status" do
@@ -27,12 +27,12 @@ RSpec.describe "GET /api/auth", type: :request do
     describe "a non-matching password confirmation" do
       before do
         post "/api/auth",
-            params: {
-              email: "test@test.com",
-              password: "12345678",
-              password_confirmation: "00000000",
-            },
-            headers: headers
+          params: {
+            email: "test@test.com",
+            password: "12345678",
+            password_confirmation: "00000000",
+          },
+          headers: headers
       end
 
       it "is expected to return a 422 response status" do
@@ -47,12 +47,12 @@ RSpec.describe "GET /api/auth", type: :request do
     describe "an invalid email address" do
       before do
         post "/api/auth",
-            params: {
-              email: "test@test",
-              password: "12345678",
-              password_confirmation: "12345678",
-            },
-            headers: headers
+          params: {
+            email: "test@test",
+            password: "12345678",
+            password_confirmation: "12345678",
+          },
+          headers: headers
       end
 
       it "is expected to return a 422 response status" do
@@ -68,12 +68,12 @@ RSpec.describe "GET /api/auth", type: :request do
       let!(:registered_user) { create(:user, email: "test@test.com") }
       before do
         post "/api/auth",
-            params: {
-              email: "test@test.com",
-              password: "12345678",
-              password_confirmation: "12345678",
-            },
-            headers: headers
+          params: {
+            email: "test@test.com",
+            password: "12345678",
+            password_confirmation: "12345678",
+          },
+          headers: headers
       end
 
       it "is expected to return a 422 response status" do

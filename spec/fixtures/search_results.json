@@ -1,0 +1,115 @@
+{
+  "count": 2,
+  "total": 2,
+  "_embedded": {
+    "quotes": [
+      {
+        "appeared_at": "2012-08-06T00:00:00.000Z",
+        "created_at": "2019-12-13T16:56:22.224Z",
+        "quote_id": "5i2eEJzdS9a0daHLzQheqw",
+        "tags": ["Barack Obama"],
+        "updated_at": "2019-12-13T17:26:27.045Z",
+        "value": "An 'extremely credible source' has called my office and told me that Barack Obama's birth certificate is a fraud.",
+        "_embedded": {
+          "author": [
+            {
+              "author_id": "wVE8Y7BoRKCBkxs1JkqAvw",
+              "bio": null,
+              "created_at": "2019-12-13T16:43:24.728Z",
+              "name": "Donald Trump",
+              "slug": "donald-trump",
+              "updated_at": "2019-12-13T16:43:24.728Z",
+              "_links": {
+                "self": {
+                  "href": "http://api.tronalddump.io/author/wVE8Y7BoRKCBkxs1JkqAvw"
+                }
+              }
+            }
+          ],
+          "source": [
+            {
+              "created_at": "2019-12-13T16:50:55.546Z",
+              "filename": null,
+              "quote_source_id": "DusNnKwsQWu-osffgzgO_A",
+              "remarks": null,
+              "updated_at": "2019-12-13T16:50:55.546Z",
+              "url": "https://twitter.com/realdonaldtrump/status/232572505238433794",
+              "_links": {
+                "self": {
+                  "href": "http://api.tronalddump.io/quote-source/DusNnKwsQWu-osffgzgO_A"
+                }
+              }
+            }
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "http://api.tronalddump.io/quote/5i2eEJzdS9a0daHLzQheqw"
+          }
+        }
+      },
+      {
+        "appeared_at": "2015-11-03T15:47:01.000Z",
+        "created_at": "2019-12-13T16:57:24.375Z",
+        "quote_id": "YoByEt23QVq3pnfUid199Q",
+        "tags": ["Marco Rubio"],
+        "updated_at": "2019-12-13T17:26:27.045Z",
+        "value": "Marco Rubio would keep Barack Obama’s executive order on amnesty intact. See article. Cannot be President.\n\n  https://t.co/JW5f8OouyA",
+        "_embedded": {
+          "author": [
+            {
+              "author_id": "wVE8Y7BoRKCBkxs1JkqAvw",
+              "bio": null,
+              "created_at": "2019-12-13T16:43:24.728Z",
+              "name": "Donald Trump",
+              "slug": "donald-trump",
+              "updated_at": "2019-12-13T16:43:24.728Z",
+              "_links": {
+                "self": {
+                  "href": "http://api.tronalddump.io/author/wVE8Y7BoRKCBkxs1JkqAvw"
+                }
+              }
+            }
+          ],
+          "source": [
+            {
+              "created_at": "2019-12-13T16:51:55.503Z",
+              "filename": null,
+              "quote_source_id": "l08p4OtwTNG4tjanGegSHQ",
+              "remarks": null,
+              "updated_at": "2019-12-13T16:51:55.503Z",
+              "url": "https://twitter.com/realDonaldTrump/status/661570281060835328",
+              "_links": {
+                "self": {
+                  "href": "http://api.tronalddump.io/quote-source/l08p4OtwTNG4tjanGegSHQ"
+                }
+              }
+            }
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "http://api.tronalddump.io/quote/YoByEt23QVq3pnfUid199Q"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://api.tronalddump.io/search/quote?query=barack&page=0"
+    },
+    "first": {
+      "href": "http://api.tronalddump.io/search/quote?query=barack&page=0"
+    },
+    "prev": {
+      "href": "http://api.tronalddump.io/search/quote?query=barack&page=0"
+    },
+    "next": {
+      "href": "http://api.tronalddump.io/search/quote?query=barack&page=1"
+    },
+    "last": {
+      "href": "http://api.tronalddump.io/search/quote?query=barack&page=1"
+    }
+  }
+}

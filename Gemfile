@@ -9,6 +9,7 @@ gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rest-client'
 gem 'rack-cors', require: 'rack/cors'
+gem 'stripe-rails'
 gem 'devise_token_auth'
 
 group :development, :test do
@@ -18,6 +19,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'coveralls', require: false
   gem 'webmock'
+  gem 'stripe-ruby-mock', require: 'stripe_mock'
 end
 
 group :development do
